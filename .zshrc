@@ -23,7 +23,7 @@ setopt auto_cd
 alias dwn="cd Downloads"
 alias ll="ls -al"
 alias dr="cd hyprdots"
-alias autoclean="./.local/scripts/cleanup.sh"
+alias autoclean="./.scripts/cleanup.sh"
 
 
 #import pywal colors
