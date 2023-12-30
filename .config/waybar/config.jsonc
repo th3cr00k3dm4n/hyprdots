@@ -100,7 +100,7 @@
         "custom/power": {
                     "tooltip": false,
                     "format": "",
-                    "on-click": "wlogout"
+                    "on-click": "exec ~/.config/tofi/powermenu.sh"
         },
     },
 ]
