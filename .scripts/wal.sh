@@ -6,10 +6,13 @@ sleep 0.3
 rm -rf .cache/wall/* 
 sleep 0.3
 wal -i "$IMG" >/dev/null 2>&1 
-pywalfox updatea
-notify-send "Theme Updated :)"
+pywalfox update
+sh ~/.scripts/mako.sh
+sh ~/.scripts/tofi.sh
+sleep 0.5
 pkill waybar
 waybar >/dev/null 2>&1 & disown &&
 sleep 0.5 
+notify-send "Theme Updated :)"
 exit
 
