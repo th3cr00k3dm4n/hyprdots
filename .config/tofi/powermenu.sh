@@ -8,7 +8,7 @@ else
     swaylock
     ;;
   "󰍃")
-      hyprctl dispatch exit 
+      hyprctl dispatch exit 0
     ;;
   "")
     systemctl poweroff
