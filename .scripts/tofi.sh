@@ -13,21 +13,22 @@ COLOR5=`head -6 $COLORS | tail -1`
 COLOR6=`head -7 $COLORS | tail -1`
 
 cat << EOF > $TOFICONFIG
+terminal=foot
 hide-cursor=true
 corner-radius= 15
 width = 20%
 height = 20%
-border-width = 0
-border- = 0
+border-width = 2
 outline-width = 0
-padding = 2%
+padding = 20
 result-spacing = 5
 num-results = 5
 prompt-text =󰣇 
-prompt-padding= 5
+prompt-padding =15 
 background-color = $COLOR7
-text-color= $COLOR2
+text-color= $COLOR5
 prompt-color= $COLOR3
 input-color= $COLOR4
-selection-color= $COLOR5
+selection-color= $COLOR2
+border-color=$COLOR5
 EOF

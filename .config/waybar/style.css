@@ -31,9 +31,8 @@ tooltip {
 #disk,
 #temperature,
 #battery, 
-#tray,
-#taskbar,
-#custom-power {
+#tray
+ {
 	color: @foreground;
 	border-radius: 10px;
 	border-width: 1px;
@@ -44,11 +43,29 @@ tooltip {
 	
 }
 
+#taskbar{
+	color: @foreground;
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @color9
+	
+}
+#taskbar.empty{
+	color: @background;
+	border-color: @background;
+	padding:0px;
+	margin:0px;
+}
  
 
 #custom-power{
+	color: @background;
+	border-width: 0px;
 	   border-radius: 10px;
 	   background-color: @color10;
+	   	padding: 5px;
+	margin:3px;
 
 }
 
@@ -79,7 +96,7 @@ tooltip {
 
 
 #workspaces {
-  background: #1e1e1e;
+  background: @color3;
   margin: 0px;
   padding: 0px 0px;
   margin: 1px;
@@ -114,3 +131,4 @@ tooltip {
 #workspaces button.urgent {
   background-color: @color9;
 }
+

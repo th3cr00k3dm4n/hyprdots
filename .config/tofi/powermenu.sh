@@ -3,7 +3,7 @@
 if (ps -a | grep tofi >/dev/null); then
   killall -q tofi
 else
-  case $(printf "%s\n"  "󰌾" "󰍃" "" "" "󰒲"  | tofi --width 180 --height 260) in
+  case $(printf "%s\n"  "󰌾" "󰍃" "" "" "󰒲"  | tofi --width 100 --height 300 --hide-input=true --prompt-text=""   ) in
   "󰌾")
     swaylock
     ;;
