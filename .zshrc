@@ -22,7 +22,7 @@ setopt auto_cd
 #alias
 alias dwn="cd Downloads"
 alias ll="ls -al"
-alias dots="cd .dotfiles"
+alias dr="cd hyprdots"
 alias autoclean="./.local/scripts/cleanup.sh"
 
 
