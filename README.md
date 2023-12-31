@@ -1,4 +1,4 @@
-# My wayfire dotfiles
+# My dotfiles
 * OS      : [Arch linux](https://archlinux.org)
 + Shell   : [Zsh](https://github.com/zsh-users/zsh)
 - WM      : [Hyprland](https://hyprland.org/)
