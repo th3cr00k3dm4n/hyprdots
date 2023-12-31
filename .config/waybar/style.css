@@ -44,7 +44,8 @@ tooltip {
 }
 
 #taskbar{
-	color: @foreground;
+	color: @background;
+	background-color: @background;
 	border-radius: 10px;
 	border-width: 1px;
 	border-style: solid;
