@@ -7,4 +7,4 @@
 - Color Schemes : [Pywal](https://github.com/dylanaraps/pywal) 
 ### Screenshots
 
-![home screen](https://github.com/th3cr00k3dm4n/images/blob/ca6909643fd4d578cdf767fcfdce9d7279a6b427/dots/hyprland.gif)
+![home screen](https://github.com/th3cr00k3dm4n/images/blob/9ba4472737f5a2bfe4e1d563139f30237f807878/dots/hyprland.gif)
