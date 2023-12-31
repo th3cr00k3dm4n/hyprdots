@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-IMG=$(find /home/$USER/.wallpapers -type f \( -name "*.png" -o -name "*.jpg" \)  | shuf -n1) 
+IMG=$(find /home/$USER/.wallpaper -type f \( -name "*.png" -o -name "*.jpg" \)  | shuf -n1) 
 sleep 0.3
 swaybg -i "$IMG" -m fill >/dev/null 2>&1 &  
 sleep 0.3
