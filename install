@@ -1,0 +1,40 @@
+#!/bin/sh
+GITLINK="https://github.com/th3cr00k3dm4n/hyprdots.git"
+REPO="hyprdots"
+FIREFX=".mozilla/firefox/*.default-release/"
+
+ install_yay(){
+     clear
+	 cd "$HOME" 
+	 pacman -S --needed git base-devel
+	 git clone https://aur.archlinux.org/yay.git 
+	 cd yay 
+	 sudo  makepkg -si
+	 pacman -Q | grep yay >>/dev/null  && echo "installed yay"; 
+	 install_pkgs || 
+	 echo "failed to install yay.try manual install" &&
+	 exit
+ }
+
+ install_pkgs(){
+    yay  -S $(cat "$REPO"/pkgs | cut -d' ' -f1) && install_config || 
+    echo "Failed to install packages" && 
+    exit	
+ }
+ 
+ install_config(){
+    clear;
+	cd "$HOME" &&
+	mkdir oldconfig  &&
+	mv .config/ oldconfig &&
+	git clone "$GITLINK"  &&
+	cd "$REPO"  &&
+	stow -S .config/ .wallpaper/ .scripts/ .zshrc  &&
+	cd "$FIREFX"  &&
+	rm -rf chrome  &&
+	cd "$HOME"  &&
+	cp -r "$REPO"/firefox/*  "$FIREFX/" && 
+	echo "Installation complete"; exit ||
+	echo "Failed" ;exit
+ }
+install_yay ;
