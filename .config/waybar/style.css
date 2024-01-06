@@ -34,8 +34,7 @@ tooltip {
 #memory,
 #disk,
 #temperature,
-#battery, 
-#tray
+#battery
  {
 	color: @foreground;
 	border-radius: 10px;
@@ -73,12 +72,17 @@ tooltip {
 	margin:3px;
 
 }
-
-
-#battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: @color10;
+@keyframes charge {
+   0% { border-color: @color10; }
+   50% { border-color: @color7; }
+   100% { border-color: @color5; }
 }
+
+#battery.charging, #battery.plugged  {
+   border: 2px solid #3498db; /* Initial border color */
+   animation: charge 2s infinite; /* Animation property */
+}
+
 
 #battery.critical:not(.charging) {
     animation-name: blink;

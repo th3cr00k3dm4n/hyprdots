@@ -52,12 +52,7 @@
 			"format-disconnected": "",
 			"format-ethernet": "󰈀"
 			
-		}, 		
-        "tray": {
-            "icon-size": 13,
-            "spacing": 10
-        },
-
+		}, 	
 		"pulseaudio": {
             "scroll-step": 1,
             "format": "{icon}\n{volume}%",

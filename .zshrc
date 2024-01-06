@@ -24,7 +24,8 @@ alias dwn="cd Downloads"
 alias ll="ls -al"
 alias dr="cd hyprdots"
 alias autoclean="./.scripts/cleanup.sh"
-
+alias wl="./.scripts/wal.sh"
+alias bt="bluetuith"
 
 #import pywal colors
 (cat ~/.cache/wal/sequences &)
