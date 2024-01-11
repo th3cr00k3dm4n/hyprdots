@@ -72,25 +72,28 @@ tooltip {
 	margin:3px;
 
 }
+#battery {
+    color: #9ec49f;
+}
+
 @keyframes charge {
-   0% { border-color: @color10; }
-   50% { border-color: @color7; }
-   100% { border-color: @color5; }
+    0% {    background-position: 0%  0%; }
+   25% {    background-position: 25% 0%; }
+   50% {    background-position: 50% 0%; }
+   75% {    background-position: 25% 0%; }
+  100% {    background-position: 0%  0%; }
 }
 
 #battery.charging, #battery.plugged  {
-   border: 2px solid #3498db; /* Initial border color */
-   animation: charge 2s infinite; /* Animation property */
-}
+  border: 1px solid;
+  border-color:@color8;
+  background: linear-gradient(to right, @color9, @background,@color9,@background, @color9  );
+  background-size: 200% 100%; 
+  animation: charge 10s ease-in-out	 infinite; 
+  color: @foreground;
+  }
 
 
-#battery.critical:not(.charging) {
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 @keyframes blink {
     to {
@@ -99,8 +102,12 @@ tooltip {
     }
 }
 
-#battery {
-    color: #9ec49f;
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 
