@@ -1,4 +1,6 @@
+
 terminal=foot
+font-size = 18
 hide-cursor=true
 corner-radius= 15
 width = 20%
@@ -6,12 +8,12 @@ height = 20%
 border-width = 2
 outline-width = 0
 result-spacing = 6
-num-results = 5
+num-results = 2
 prompt-text =󰣇 
 prompt-padding =15 
 background-color = #000a
-text-color= #93725D
-prompt-color= #958B72
-input-color= #CCA16D
-selection-color= #748380
-border-color=#748380
+text-color= #AF8B6E
+prompt-color= #CF9D71
+input-color= #DBB276
+selection-color= #EBC07C
+border-color=#EBC07C

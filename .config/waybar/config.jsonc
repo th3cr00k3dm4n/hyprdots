@@ -99,7 +99,7 @@
         "custom/power": {
                     "tooltip": false,
                     "format": "",
-                    "on-click": "exec ~/.config/tofi/powermenu.sh"
+                    "on-click": "exec ~/.scripts/powermenu.sh"
         },
     },
 ]

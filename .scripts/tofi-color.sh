@@ -1,7 +1,6 @@
 #!/bin/env bash
 
 TOFICONFIG="$HOME/.config/tofi/config"
-#MAKOCONFIG="/tmp/config"
 COLORS="$HOME/.cache/wal/colors"
 
 COLOR0=`head -1 $COLORS`
@@ -13,7 +12,9 @@ COLOR5=`head -6 $COLORS | tail -1`
 COLOR6=`head -7 $COLORS | tail -1`
 
 cat << EOF > $TOFICONFIG
+
 terminal=foot
+font-size = 18
 hide-cursor=true
 corner-radius= 15
 width = 20%
@@ -21,7 +22,7 @@ height = 20%
 border-width = 2
 outline-width = 0
 result-spacing = 6
-num-results = 5
+num-results = 2
 prompt-text =󰣇 
 prompt-padding =15 
 background-color = #000a
