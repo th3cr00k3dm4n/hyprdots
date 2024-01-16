@@ -67,5 +67,6 @@ text-color=$COLOR1
 default-timeout=0
 ignore-timeout=1
 EOF
+
 $MAKOCTL  reload
 

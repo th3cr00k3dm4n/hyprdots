@@ -52,7 +52,9 @@ tooltip {
 	border-radius: 10px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: @color9
+	border-color: @color9;
+	padding:0px;
+	margin:0px;
 	
 }
 #taskbar.empty{
