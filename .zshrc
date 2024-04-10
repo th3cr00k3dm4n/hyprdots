@@ -12,10 +12,7 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
-#Git branch
-autoload -Uz vcs_info # enable vcs_info
-precmd () { vcs_info } # always load before displaying the prompt
-zstyle ':vcs_info:git*' formats ' ↣ (%F{254}%b%F{245})' # format $vcs_info_msg_0_
+
 #Auto cd
 setopt auto_cd
 
@@ -36,5 +33,6 @@ source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 
 sh ~/.scripts/fet.sh
-PS1="%F{153}%(5~|%-1~/⋯/%3~|%4~)%F{245}↣ %{$reset_color%}%b "
+
+PS1="%F{145}󰣇 %F{153}%(5~|%-1~/⋯/%3~|%4~)%F{245} ↣%{$reset_color%}%b "
 
