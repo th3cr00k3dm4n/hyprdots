@@ -34,7 +34,8 @@ tooltip {
 #memory,
 #disk,
 #temperature,
-#battery
+#battery,
+#tray
  {
 	color: @foreground;
 	border-radius: 10px;

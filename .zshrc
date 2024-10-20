@@ -23,6 +23,8 @@ alias dr="cd hyprdots"
 alias autoclean="./.scripts/cleanup.sh"
 alias wl="./.scripts/wal.sh"
 alias bt="bluetuith"
+alias mpv=" mpv --player-operation-mode=pseudo-gui "
+alias up="sudo pacman -Syyu --noconfirm --needed"
 
 #import pywal colors
 (cat ~/.cache/wal/sequences &)
@@ -30,7 +32,6 @@ alias bt="bluetuith"
 #plugins
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-
 
 sh ~/.scripts/fet.sh
 

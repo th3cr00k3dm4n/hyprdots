@@ -14,9 +14,9 @@
   					 
   "modules-center": ["hyprland/workspaces", ],
 
-  "modules-right": [ "network",
-  					 "pulseaudio",  
+  "modules-right": [ "pulseaudio",  
   					 "battery",
+  					 "tray",
   					 "custom/power"
   					 ],
 
@@ -45,14 +45,14 @@
         	"on-click": "foot -e yay" 		
  	},
 
-		"network": {
-            "tooltip-format": "{essid}({signalStrength}%) {ifname}: {ipaddr}/{cidr}",
-            "on-click": "foot -e nmtui-connect",
-			"format-wifi": "",
-			"format-disconnected": "",
-			"format-ethernet": "󰈀"
-			
-		}, 	
+//"network": {
+  //        "tooltip-format": "{essid}({signalStrength}%) {ifname}: {ipaddr}/{cidr}",
+    //      "on-click": "foot -e nmtui-connect",
+	//"format-wifi": "",
+	//"format-disconnected": "",
+	//"format-ethernet": "󰈀"
+	//
+//}, 	
 		"pulseaudio": {
             "scroll-step": 1,
             "format": "{icon}\n{volume}%",
@@ -101,5 +101,9 @@
                     "format": "",
                     "on-click": "exec ~/.scripts/powermenu.sh"
         },
+	"tray": {
+	     "icon-size":10,
+	     "spacing": 10,
+	 }
     },
 ]
