@@ -37,3 +37,14 @@ sh ~/.scripts/fet.sh
 
 PS1="%F{145}󰣇 %F{153}%(5~|%-1~/⋯/%3~|%4~)%F{245} ↣%{$reset_color%}%b "
 
+
+# bun completions
+[ -s "/home/cr00k3d/.bun/_bun" ] && source "/home/cr00k3d/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
